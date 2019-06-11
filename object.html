@@ -1,0 +1,69 @@
+<script>
+//OOP
+
+// object, class
+//property
+//method
+
+//static/dynamic
+//inheritance
+// encapsulation
+
+
+////////////////////////////////// simple object /////////////////////
+
+// var phone = {
+//     // properties
+//     front_camera: 20,
+//     back_camera: 50,
+//     color: "yellow",
+//     price: 100000 //mdl
+// };
+//
+// console.log ( phone );
+
+// var car = {
+//     hp: 280,
+//     model: "Honda",
+//     color: "blue",
+//     transmision: "manual",
+//     price: 15000 //usd
+// }
+//
+// console.log ( car );
+
+var dog = {
+    furr: true,
+    name: "Zveri",
+    race: "Senbernar",
+    weight: 200, //kg
+
+    bark: function(){
+        console.log ("RRRRRR...... !!!!");
+    },
+    eat: function(what){
+        if ( what=="caviar" ){
+            console.log("Ia am eating!");
+        } else if ( what=="meat" ) {
+            console.log("Ia am eating!");
+        } else if ( what=="fish" ) {
+            console.log("Ia am eating!");
+        }
+        else if ( what=="bones" ) {
+           console.log("Ia am eating!");
+       }else {
+           console.log("NU!");
+       }
+   },
+   who: function() {
+       console.log("This is a dog");
+       console.log("It's name is " + this.name);
+       console.log("Race " + this.race);
+       console.log("Weight " + this.weight);
+   },
+}
+console.log ( dog.name );
+    dog.bark();
+    dog.who();
+    dog.eat("fish");
+</script>

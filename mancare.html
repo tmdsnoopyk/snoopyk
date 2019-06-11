@@ -1,0 +1,29 @@
+<script>
+
+    class Pizza {
+        //SCHITA
+        constructor(n,i,b,w,p){
+            this.name = n;
+            this.image = i;
+            this.blat = b;
+            this.weight = w;
+            this.price = p
+        }
+        render(){
+            document.write( `<h2>${this.name}</h2>`);
+            document.write( `<img src="${this.image}" width="280"/>`);
+            document.write( ``);
+            document.write( `<h3><i>${this.weight} g</i></h3>`);
+            document.write( `<h3><i>${this.price} mdl </i></h3>`);
+        }
+    }
+
+    //creez obiecte
+    var p1 = new Pizza ("Rucola", "https://www.andys.md/public/menu/thumbs/version_2/7951cb8ca03aa30d3f84b7ff9214c39e.jpg", true, 450, 80);
+    var p2 = new Pizza ("Funghi", "https://www.andys.md/public/menu/thumbs/version_2/32b0529b15638cf8b4958c55935bcf0c.jpg", true, 500, 85);
+    var p3 = new Pizza ("Capricioasa", "https://www.andys.md/public/menu/thumbs/version_2/3e0383d74db71d6b66f56f5d58405372.jpg", false, 600, 80);
+    console.log( p1, p2, p3 );
+    p1.render();
+    p2.render();
+    p3.render();
+</script>

@@ -1,0 +1,18 @@
+body {
+    background-image: url(liber.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.flake {
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(#9bf, transparent);
+    border-radius: 10px;
+    position: absolute;
+    animation: fall 0.5s linear;
+}
+
+@keyframes fall {
+    0% { top:0px; }
+    100% { top:500px; }
+}

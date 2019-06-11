@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Input Validation</title>
+        <style>
+            input:checked{
+                /*NU MERGE*/
+            }
+            input:valid{
+                border-color: green;
+            }
+            input:invalid {
+                border-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="your name..." pattern="[a-z ]+">
+            <button>GO</button>
+        </form>
+    </body>
+</html>

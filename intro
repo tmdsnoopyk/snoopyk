@@ -1,0 +1,29 @@
+multistep form
+polls
+  stats
+
+  DOM / BOM - Events
+  Objects -- apear -- User /System
+  action -- JS Reaction
+  classes (Mouse, Keybord, DOM , Window , ...)
+
+  common properties:
+  coordonates (X,Y,Z)
+  code/status (ctrl,alt,shift)
+  target (source)
+  type - string ('click', 'keydown')
+  isTrusted - real/virtual
+  .stopPropagation ()
+  .preventDefault ()
+
+  connect
+  1) <tag on[event]="function_name();">
+  2) element = getElementById('my_id')
+  element.on[event] = function() {
+
+  }
+  function action () {
+
+  }
+  element.on[event] = action;
+  3) element.addEventListener('event', action)

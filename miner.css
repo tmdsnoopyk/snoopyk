@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    background-color: #456;
+}
+.grass {
+    width: 64px;
+    height: 64px;
+    background-image: url(grass.png);
+    background-position: center 24px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.miner {
+    width: 64px;
+    height: 64px;
+    background-image: url(worker.png);
+    background-position: center -6px;
+    position: absolute;
+}
+.bomb{
+  width: 64px;
+  height: 64px;
+  background-image: url(bomb.png);
+}
+#map{
+  width: 640px;
+  margin: auto;
+  background-color: rgb(99, 211, 109);
+  transform: scale(0.75);
+}
+#controls{
+  margin: auto;
+}

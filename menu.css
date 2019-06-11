@@ -1,0 +1,74 @@
+body {
+    background-color: #78b1eb;
+    font-family: arial;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+nav {
+    background-color: white;
+    margin: 20px;
+    height: 40px;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    border-right: 1px solid #78b1eb;
+    color: #78b1eb;
+    padding: 12px 3.8vw;
+    transition: 1.5s;
+}
+a:hover {
+    background-color: #67a7e6;
+    color: white;
+}
+nav .burger a {
+    background-color: #46a1fe;
+    color: white;
+    padding: 12px 18px;
+}
+nav .burger {
+    float: right;
+    position: relative;
+    display: none;
+}
+nav .burger span {
+    background-color: white;
+    width: 19px;
+    height: 2px;
+    display: block;
+    margin: 3px;
+}
+nav .burger a::before {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #46a1fe;
+  content: "5";
+  position: absolute;
+  color: white;
+  left: -10px;
+  top: 10px;
+  text-align: center;
+  border: 1px solid white;
+  line-height: 21px;
+}
+nav ul li:nth-child(9) a{
+  border-right: none;
+}
+
+/*for mobile*/
+
+ @media screen and (max-width:800px) {
+   nav .burger {
+     display: block;
+   }
+   nav li:nth-child(9),
+   nav li:nth-child(8),
+   nav li:nth-child(7),
+   nav li:nth-child(6) {
+     display: none;
+   }
+ }

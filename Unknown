@@ -1,0 +1,16 @@
+var x = 10;
+
+STORAGE API
+    cookie
+    document.cookie
+    e o tehnologie veche, pastrarea e in tipul string
+    string "key= value; key2=value;"
+    javascript (client) / PHP (server)
+    low memory < 4kb
+    max age
+window.localStorage (pe un timp indelungat)
+window.sessionStorage (pana la refresh !\)
+    new
+    string "key = value;"
+    CLIENT !!!
+    10mb+ ...

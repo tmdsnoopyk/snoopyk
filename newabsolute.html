@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="utf-8">
+         <title>Exemplu cu stilurile Externe</title>
+         <link rel="stylesheet" href="style.css">
+         <style>
+             body {
+                 height: 30000px;
+             }
+             #big {
+                 background-color: blue;
+                 width: 300px;
+                 height: 300px;
+                 position: absolute;
+             }
+             #medium {
+                 background-color: yellow;
+                 width: 200px;
+                 height: 200px;
+                 /*position: relative;*/
+             }
+             #small {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: absolute;
+                bottom: -100px;
+                right: -100px;
+             }
+         </style>
+    </head>
+    <body>
+        <div id="big">
+            <div id="medium">
+                <div id="small">
+
+                </div>
+            </div>
+        </div>
+    </body>

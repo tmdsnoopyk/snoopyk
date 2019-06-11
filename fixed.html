@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="utf-8">
+         <title>Exemplu cu stilurile Externe</title>
+         <link rel="stylesheet" href="style.css">
+         <style>
+             body {
+                 height: 300000px;
+             }
+             div {
+                 width: 100px;
+                 height: 100px;
+             }
+             #d1 {
+                 background-color: blue;
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 z-index: 2;
+             }
+             #d2 {
+                 background-color: yellow;
+                 position: absolute;
+                 top: 50px;
+                 left: 50px;
+                 z-index: 1;
+             }
+             #d3 {
+                 background-color: red;
+                 position: fixed;
+                 top: 100px;
+                 left: 100px;
+             }
+         </style>
+    </head>
+    <body>
+        <div id="d1">1</div>
+        <div id="d2">2</div>
+        <div id="d3">3</div>
+    </body>
+
+<!-- Elementul mosteneste aproape tot din absolute, in afara de 2 momente key: 1. elementul ramane in coordonatele date,
+indiferent de stare de scrooling ; 2. coordonatele intotdeauna se masoara doar de la fereastra. -->

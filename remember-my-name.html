@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Doc</title>
+    </head>
+    <body onload="load()">
+        <div id="content">
+            <form onsubmit="save(event)">
+            <input type="text" placeholder="what's your name?">
+            </form>
+        </div>
+        <script>
+            function save(e) {
+                e.preventDefault();
+                let name = document
+                                    .getElementById ('content')
+                                    .firstElementChild
+                                    .firstElementChild
+                                    .value
+                localStorage.setItem('name', name);
+
+            }
+                function load(){
+                    let name = localStorage.getItem ('name');
+                    if (name != null) {
+                        var d = document.getElementById ('content');
+                        d.innerHTML = "";
+                    }
+                    alert (name);
+                }
+        </script>
+    </body>
+</html>

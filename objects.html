@@ -1,0 +1,29 @@
+<script>
+    var car_1 = { model: "BMW", year: 2018};
+    var car_2 = { model: "Mercedes", year: 2000};
+    var car_3 = { model: "Honda", year: 1960};
+
+    //class OOP
+    // class SHABLON, TEMPLATE -> object
+
+    //ES5 - function ()
+    //ES6+
+
+    class Car {
+        //SCHITA
+        constructor(m,y){
+            this.model = m;
+            this.year = y;
+        }
+
+        beep(){
+            alert ("Marsh!");
+        }
+    }
+
+    //creez obiecte
+    var c1 = new Car ("BMW",2000);
+    var c2 = new Car ("Mercedes",1999);
+    var c3 = new Car ("BMW",2009);
+    console.log( c1, c2, c3 );
+</script>

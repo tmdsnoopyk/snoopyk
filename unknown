@@ -1,0 +1,56 @@
+*classes / objects ( React/Angular/Vue/nodejs)
+*DOM (Document Object Model)
+    - elements
+    - hierarchy
+    - attributes
+    - stylesheets
+    - events
+* BOM (Browser Object Model)
+    - window
+    - resource
+    - navigator
+    - location
+ * Web API
+    - Fetch API, AJAX - server
+    - Animation API
+    - Audio API, Video API
+    - Storage API / Cache API
+ * Google Services, Weather Services, News ...
+
+
+page html =------------ load ------------- BROWSER
+                        BROWSER ----- (parse) ------- DOM ------ Window ------- user
+                        Variabile si proprietati globale
+                        DOM
+                          document.title - <title>
+                          document.head - <head>
+                          document.body - <body>
+
+                          document.images - img Collection \
+                          document.links - linkurile (a) tot Collection
+                          document.forms - formularile
+
+                          window.xxxx - <tag id="xxxx">
+                          window.['xx-xx'] - <tag id="xx-xx">
+Functii de cautare in DOM:
+
+document.getElementById('xx-xx') - obj / null
+document.getElementsByClassName ('my-class') - obj[] / []
+document.getElementsByTagName ('tag') - obj[] / []
+
+browser mai moderne:
+document.querySelector('css selector') - obj / null
+document.querySelectorAll('css selector') - obj [] / []
+
+Element
+
+element.xxxx
+
+Atributes
+
+.innerHTML - <tag> inner </tag>
+
+(standard : id , style , width, height, ...)
+
+element.attribute
+element.className - class
