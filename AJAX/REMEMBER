@@ -1,0 +1,9 @@
+AJAX / Fetch API / Websockets / Push Notification
+    *Client -> Server
+    *http(s)
+        (request/response)
+        (GET/POST)
+        (status code)
+        (mime type/data format)
+        (request lifecycle)
+        (CORS/XSS)

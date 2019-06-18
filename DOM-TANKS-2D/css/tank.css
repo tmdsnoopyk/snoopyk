@@ -1,0 +1,8 @@
+.tank {
+    width: 84px;
+    height: 84px;
+    border: 1px dotted red;
+    position: absolute;
+    background-image: url(../images/tank.png);
+    background-position: -84px 0;
+}
