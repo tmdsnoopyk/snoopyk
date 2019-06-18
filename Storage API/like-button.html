@@ -1,0 +1,20 @@
+<body onload="load()">
+<button onclick="like();">like</button>
+<button>Clear</button> // sa se stearga like-urile , 
+
+<script>
+let n = +localStorage.getItem('n') || 0;
+function like(){
+        n++;
+        document.querySelector('button').innerHTML = `Likes ${n}`;
+        localStorage.setItem ('n', n);
+    }
+    function load(){
+        if (n != null) {
+            document.querySelector('button').innerHTML = `Likes ${n}`;
+        }
+    }
+</script>
+
+
+</body>

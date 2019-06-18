@@ -1,0 +1,29 @@
+.coin {
+    position: absolute;
+    top: 1%;
+    perspective: 100px;
+}
+.coin.falling {
+    animation: fall 1s ease-in;
+    animation-fill-mode: forwards;
+}
+.coin .rotating {
+    animation: rot 1s linear 3;
+}
+.coin .rotX {
+    animation: rotX 0.2S ease-in;
+    animation-fill-mode: forwards;
+    transform-origin: bottom;
+}
+@keyframes fall {
+    0%{ top: 1%;}
+    100% { top: 90%;}
+}
+@keyframes rot {
+    0% {transform: rotateY(0deg);}
+    100% {transform: rotateY(360deg);}
+}
+@keyframes rotX {
+    0% {transform: rotateX(0deg);}
+    100% {transform: rotateX(60deg);}
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM navigation</title>
+        <style>
+        .active{
+            color: green;
+        }
+        </style>
+    </head>
+    <body>
+        <h1><small>DOM</small>structure</h1>
+        <ul>
+            <li>Document</li>
+            <li>Object</li>
+            <li>Model</li>
+        </ul>
+        <h2>Element</h2>
+        <ul>
+            <li>.parentElement</li>
+            <li>.nextElementSibling</li>
+            <li>.previousElementSibling</li>
+            <li>.firstElementChild</li>
+            <li>.lastElementChild</li>
+            <li>.children[]</li>
+        </ul>
+        <script>
+            //1)alert (textul din h1>small)
+            // alert(document.getElementsByTagName('small')[0].innerHTML)
+
+            //document.getElementsByTagName ('h2')[0].nextElementSibling.firstElementChild.innerHTML
+//             document.getElementsByTagName ('h2')[0].nextElementSibling.children[2].className = 'active'
+// "active"
+// document.getElementsByTagName ('h2')[0].nextElementSibling.children[4].className = 'active'
+// "active"
+// document.getElementsByTagName ('h2')[0].nextElementSibling.children[0].className = 'active'
+// "active"
+        </script>
+    </body>
+</html>
