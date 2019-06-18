@@ -1,0 +1,32 @@
+<body style="font-family: monospace; line-height: 9px;">
+<script>
+    // **********
+    var bomb_r = +prompt ("pe ce rand este bomba?");
+    var bomb_c = +prompt ("pe ce coloana este bomba?");
+    var r= +prompt ("Cite randuri");
+    var s= +prompt("A cita cifra e #");
+    for (var r=1; r<=10; r++) {
+        document.body.innerHTML += ("<br>");
+        switch ( s ){ // === (adica identic)
+            if ( r==bomb_r && s==bomb_c) {
+                document.body.innerHTML +="x";
+            }
+                case 1: document.body.innerHTML +="#*********"; break;
+                case 2: document.body.innerHTML +="*#********"; break;
+                case 3: document.body.innerHTML +="**#*******"; break;
+                case 4: document.body.innerHTML +="***#******"; break;
+                case 5: document.body.innerHTML +="****#*****"; break;
+                case 6: document.body.innerHTML +="*****#****"; break;
+                case 7: document.body.innerHTML +="******#***"; break;
+                case 8: document.body.innerHTML +="*******#**"; break;
+                case 9: document.body.innerHTML +="********#*"; break;
+                case 10: document.body.innerHTML +="*********#"; break;
+                case 0: document.body.innerHTML +="**********"; break;
+                //...
+                default: document.body.innerHTML +="Shto s toboi?"; break;
+            }
+        }
+    }
+</script>
+
+</body>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="garden2.css">
+        <title></title>
+    </head>
+    <body>
+        <div id="garden">
+
+        </div>
+
+        <script>
+            //var garden = [1,2,3]; //simple, unidimensional
+            //arry bidimensional 3x3
+            var garden = [
+                [1,0,1],  //0
+                [0,0,0],  //1
+                [0,0,1]   //2
+                //0,1,2
+            ];
+            //alert ( garden[2][2]);
+            function show(){
+                var div = document.getElementById('garden');
+                for (var r=0; r<=2; r++){
+                    for (var c=0; c<=2; c++){
+                        div.innerHTML += garden[r][c];
+                    }
+                }
+            }
+            show();
+        </script>
+    </body>
+</html>

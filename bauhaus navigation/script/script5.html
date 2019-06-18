@@ -1,0 +1,21 @@
+<script>
+    var t = +prompt ("Cate grade sunt? :")
+    //-20..0 -> frig
+    //0..10 -> normal
+    // 11..50 -> cald
+    if( t < -20 || t > 50 || t===null || t===""){ // null p/u cancel in prompt, "pentru ok"
+        document.write("ERROR 404")
+    }else{
+        document.write('<div>-20| -10| 0| 10| 20| 30| 40| 50</div>');
+        var w = (t+20) *2.8;
+        document.write('<div style="background: red; height: 5px; width:'+w+'px;"></div>');
+
+    if( t >= -20 && t <=0 ) {
+        document.write("rece");
+    }else if( t <=10 ){
+        document.write("normal");
+    }else{
+        document.write("cald")
+    }
+    }
+</script>

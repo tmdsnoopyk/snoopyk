@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  cursor: url(Target.png)  32 32, auto;
+}
+#sky{
+  height: 500px;
+  background-image: linear-gradient(#AAf,#334);
+}
+#lake {
+  height: 200px;
+  background-image: linear-gradient(#456,#567);
+  position: relative;
+}
+.duck{
+  background-image: url(duck.png);
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  bottom: 10px;
+  animation : sail 10s infinite linear;
+  transition: 1s;
+}
+@keyframes sail {
+  0%{left: 0%; transform: scaleX(-1);}
+  50% {left: 100%;transform: scaleX(-1);}
+  51%{left: 100%;transform: scaleX(1);}
+  100%{left: 0%;transform: scaleX(1);}
+}

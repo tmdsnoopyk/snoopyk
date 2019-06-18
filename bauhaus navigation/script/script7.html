@@ -1,0 +1,17 @@
+<script>
+/////////////// Input de la user///////////////////
+var bomb_r=prompt("Care rind este bomba?");
+var bomb_c=prompt("Care coloana este bomba?");
+/////////////////// Deseneaza harta pe ecran/////////////////////////
+for(var r=1; r<=10; r++){
+
+  for ( var c=1; c<=10;c++){
+    if(r==bomb_r && c==bomb_c){
+      document.write("B");
+    }else{
+    document.write("*");
+  }
+  }
+  document.write("<br>")
+  }
+</script>

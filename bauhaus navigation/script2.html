@@ -1,0 +1,17 @@
+<script>
+    // 1) denumiri var
+    // "snake_case" - cu litere minuscule
+
+    // 2) denumire const
+    // "CONSTANT_VALUE" - cu litere majuscule
+    // string + concatineaza
+
+    var s1 = +prompt ("Ce nota 1 semestru?");
+    var s2 = +prompt ("Ce nota ai al 2-lea semestru?");
+    var e = +prompt ("Ce nota ai la examen?");
+    // nota generala 40 % din s si 20 % examen
+    const KS = 0.4;
+    const KE = 0.2;
+    var g = (s1 + s2) * KS + e * KE;
+    alert ("Nota generala este = " + g);
+</script>

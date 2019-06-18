@@ -1,0 +1,13 @@
+<script>
+    // MARSHRUTKA APP
+    var tour = prompt ("tour?"); //krug
+    const DISTANCE = 20; //km
+    const CONSUME = 12; // l/100km
+    const PRICE = 15; // mdl/l
+    var money = prompt ("money?"); // mdl
+
+    // Calculati cat va costa combustibilul
+    // raspuns la intrebare ajung bani
+    var combust = tour * (DISTANCE/100 * CONSUME) * PRICE;
+    alert ("Va costa = " + Math.round ( Math.random () * combust) + "\nAjung bani?"  + (money >= combust) );
+</script>

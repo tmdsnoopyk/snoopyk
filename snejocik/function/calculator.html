@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <button onclick="btnMultiply();">*</button>
+        <button onclick="btnDevide();">/</button>
+        <button onclick="btnAdd();">+</button>
+        <button onclick="btnMinus();">-</button>
+
+        <script>
+            function btnMultiply (){
+                var a = prompt( "A: ?" );
+                var b = prompt( "B: ?" );
+                alert ( a*b );
+            }
+            function btnDevide (){
+                var a = prompt( "A: ?" );
+                var b = prompt( "B: ?" );
+                alert ( a/b );
+            }
+            function btnAdd (){
+                var a = +prompt( "A: ?" );
+                var b = +prompt( "B: ?" );
+                alert ( a+b );
+            }
+            function btnMinus (){
+                var a = prompt( "A: ?" );
+                var b = prompt( "B: ?" );
+                alert ( a-b );
+            }
+        </script>
+
+    </body>
+</html>

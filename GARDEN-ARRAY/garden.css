@@ -1,0 +1,31 @@
+.melon {
+    background-image: url("melon.png");
+    width: 49px;
+    height: 49px;
+}
+.tomato {
+    background-image: url("tomato.png");
+    width: 49px;
+    height: 49px;
+}
+.cucumber {
+    background-image: url("cucumber.png");
+    width: 49px;
+    height: 49px;
+}
+.empty {
+    background-color: white;
+    border: 1px solid black;
+    width: 49px;
+    height: 49px;
+}
+.coin {
+    background-image: url(coin.png);
+    width: 49px;
+    height: 49px;
+}
+#money {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}

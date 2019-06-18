@@ -1,0 +1,69 @@
+body {
+    font-family: arial;
+}
+#main {
+    background-color: gray;
+    padding: 20px 80px;
+    height: 60px;
+    background-color: #272727;
+}
+#main a {
+    color: #fff;
+}
+#main small, span {
+    color: #7e7e7e;
+}
+#main .slash {
+    margin-left: -5px;
+    font-weight: bold;
+    font-size: 21px;
+    color: #272727;
+}
+#main .nav-left {
+    float: left;
+    width: 60%;
+    border-right: 1px solid #7e7e7e;
+    margin-right: -1px;
+}
+#main .nav-right {
+    float: right;
+    width: 40%;
+}
+#main li {
+    float: left;
+}
+#main li:last-child {
+    float: right;
+}
+#main .nav-right li:first-child {
+    margin-left: 80px;
+}
+#main .nav-left li:last-child {
+    margin-right: 80px;
+}
+#main .nav-left li:last-child,
+#main .nav-right li {
+    padding-top: 5px;
+}
+#main .nav-right li i {
+    font-size: 20px;
+}
+#main .nav-right li a {
+    margin-right: 20px;
+}
+#main .nav-right i:hover {
+    color: #cee002;
+}
+#main .logo {
+    border: 3px solid white;
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin-right: 10px;
+}
+h3 {
+    float: left;
+}
+#main .nav-left li:first-child {
+    width: 200px;
+}

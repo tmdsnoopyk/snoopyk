@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook</title>
+    </head>
+    <body>
+
+        <div id="profile">
+            <!-- Datele utilizatorului -->
+        </div>
+
+
+        <script>
+            var my_user = {
+                name: "Filipciuc Ivan",
+                bdate: "1991-12-14",
+                maried: false,
+                likes: 100,
+                avatar: "https://www.w3schools.com/w3images/avatar2.png",
+                languages: ["English", "Romana", "Russian"],
+                friends: [],
+
+
+                showProfile: function() {
+                    var div = document.getElementById('profile');
+                    var langs = '<ul><li>' + this.languages.join("</li><li>") + '</li></ul>';
+                        console.log ( langs );
+                    var html = `
+                        <div>
+                            <h2>${this.name} <small>(${this.bdate})</small></h2>
+                            <img src="${this.avatar}" width="180"/>
+                            <hr>
+                            ${langs}
+
+                            <p><button><img src="http://icons.iconarchive.com/icons/martz90/hex/48/facebook-like-icon.png" width="25"></img></button>
+                            ${this.likes}
+                            </p>
+                            </div>
+                    `;
+                    div.innerHTML = html;
+                }
+            };
+            my_user.showProfile();
+        </script>
+    </body>
+</html>

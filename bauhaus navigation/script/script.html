@@ -1,0 +1,24 @@
+<script>
+
+    // var lapte = prompt ( "Cate pahare vrei sa beai?")
+    // var mivina = prompt ( "Cate pachetele vrei sa cumperi?")
+    // var pastet = 2;
+    // var lei = 20;
+    //  alert ( lapte*lei //lapte
+    //    + 10/10*mivina //mivina
+    //     + pastet*(lei-5) //pastet
+    // )
+    // omu lei - dolari/euro
+    var suma_mdl = prompt ( "Cati lei ai ?" );
+    // dintr-o data de baza
+    var usd_2_mdl = 17.50;
+    var eur_2_mdl = 19.00;
+    var comision = 2/100; //2%
+    //scoatem comisionul
+    suma_mdl = suma_mdl * ( 1- comision); //100% - 2%
+    // calcule + afisare
+    var suma_usd = suma_mdl / usd_2_mdl;
+    var suma_eur = suma_mdl / eur_2_mdl;
+    alert ( "in USD: " + suma_usd );
+    alert ( "in EUR: " + suma_eur );
+</script>
