@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+        <title>Exemplu de carousel</title>
+        <style>
+            body {
+                background-color: #389;
+            }
+            h2 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -50px;
+                margin-top: -10px;
+                color: blue;
+            }
+            .owl-dot{
+                width: 5px;
+                height: 5px;
+                background-color: #fff!important;
+                border-radius: 100%;
+                margin: 10px;
+            }
+            .owl-dot.active{
+                background-color: red!important;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Carousel</h1>
+        <div class="owl-carousel">
+            <div> <h2>Computer</h2><img src="https://picsum.photos/900/300?image=0" alt="" /></div>
+            <div> <h2>Autumn</h2><img src="https://picsum.photos/900/300?image=15" alt="" /></div>
+            <div> <h2>Sound</h2><img src="https://picsum.photos/900/300?image=25" alt="" /></div>
+            <div> <h2>Spune</h2><img src="https://picsum.photos/900/300?image=35" alt="" /></div>
+        </div>
+        <div class="sl-carousel">
+            <div> <h2>Computer</h2><img src="https://picsum.photos/900/300?image=0" alt="" /></div>
+            <div> <h2>Autumn</h2><img src="https://picsum.photos/900/300?image=15" alt="" /></div>
+            <div> <h2>Sound</h2><img src="https://picsum.photos/900/300?image=25" alt="" /></div>
+            <div> <h2>Spune</h2><img src="https://picsum.photos/900/300?image=35" alt="" /></div>
+        </div>
+        <!-- owl/carousel -->
+        <!-- slick/carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- conectam intai jquery ca e baza la carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $(".owl-carousel").owlCarousel({
+                    loop:true,
+                    margin:10,
+                    responsiveClass:true,
+                    autoplay:true,
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:true,
+                            dots:true
+                        },
+                        900:{
+                            items:2,
+                            nav:false,
+                            dots:true
+                        },
+                        1800:{
+                            items:3,
+                            nav:true,
+                            dots:true
+                        }
+                    }
+                });
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script type="text/javascript">
+                $(document).ready(function(){
+                  $('.sl-carousel').slick({
+                      dots: true,
+                      infinite: true,
+                      speed: 500,
+                      fade: true,
+                      autoplay:true,
+                      cssEase: 'linear'
+                    });
+                });
+        </script>
+
+    </body>
+</html>

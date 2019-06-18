@@ -1,0 +1,116 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #444;
+}
+h1 {
+    font-size: 54px;
+    line-height: 1em;
+}
+form {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+}
+section h3 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'Nunito', sans-serif;
+    color: #444;
+    letter-spacing: 0;
+}
+section p {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+#benefits .line {
+    width: 100%;
+    background-color: #ccc;
+    height: 350px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    transform: rotate(7deg);
+    transform: skewY(7deg);
+}
+#benefits div{
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    margin-right: 50px;
+    position: relative;
+}
+#benefits div:nth-child(2) {
+    top:-100px;
+}
+#benefits div:nth-child(3) {
+    top:-50px;
+}
+#benefits i {
+    font-size: 40px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+#up {
+    border-radius: 100%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+}
+.fa-angle-up {
+    position: absolute;
+    top:-3px;
+    left: 10px;
+    font-size: 30px;
+}
+.fa-newspaper-o {
+    color: #3452ff;
+}
+.fa-users {
+    color: #27CFC3;
+}
+.fa-globe {
+    color: #f41c53;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        display: block;
+        width: 90%;
+    }
+}
+.text-marker {
+    border-bottom: 0.22em solid #3452ff;
+    line-height: 0.45em;
+    display: inline-block;
+}
+.border-blue {
+    border: 1px solid rgb(52, 82, 255);
+}
+.form-element input,
+.form-element select {
+    border: 1px solid #999;
+    padding: 10px;
+}
+.form-element input[type="checkbox"],
+.form-element input[type="checkbox"] +.fa-star{
+    display: none;
+}
+.form-element input[type="checkbox"]:checked +.fa-star+.fa-star-o{
+    display: none;
+}
+.form-element input[type="checkbox"]:checked +.fa-star{
+    display: inline;
+}
